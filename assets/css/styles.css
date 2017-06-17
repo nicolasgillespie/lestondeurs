@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	/*background-color: white;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	/*font: 12px Verdana,Arial,Helvetica,sans-serif;*/
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+h1,
+h2,
+h3 {
+    margin:0;
+    padding:0;
+}
