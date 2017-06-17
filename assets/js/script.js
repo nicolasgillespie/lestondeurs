@@ -1,5 +1,11 @@
 $(document).ready(function(){
 	resize();
+
+	if($('html').data('ng-filter') != null) {
+		var img_list = $('.img_list');
+		NG_Filter(img_list);
+	}
+
 });
 
 $(window).bind('resize', function() { resize(); });

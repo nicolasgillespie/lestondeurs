@@ -1,178 +1,206 @@
 body {
   background-color: #ffffff;
-}
-body #container {
-  margin: 0 auto;
-  width: 1024px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 body header {
-  background-color: #ffffff;
-  border-left: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
-  -webkit-box-shadow: 0 0 50px -10px #000000;
-  -moz-box-shadow: 0 0 50px -10px #000000;
-  box-shadow: 0 0 50px -10px #000000;
   float: left;
-  padding: 10px 0 0 0;
+  height: 290px;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
-body header .header-top h1 {
+body header .phone,
+body header .info {
+  background-color: #1c8237;
+  color: #ffffff;
   float: left;
-  text-indent: -999em;
-  font-size: 1px;
+  font-size: 10px;
+  height: 12px;
+  line-height: 12px;
+  padding: 2px 1%;
+  position: relative;
+  text-align: right;
+  width: calc(48%);
+  z-index: 9;
 }
-body header .header-top h2,
-body header .header-top h3 {
-  font-weight: normal;
+body header .info {
+  text-align: left;
 }
-body header .header-top h1,
-body header .header-top h2,
-body header .header-top .phone {
-  color: #1c8237;
+body header .phone {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
-body header .header-top .logo,
-body header .header-top .info,
-body header .header-top .phone {
-  height: 100px;
+body header .header-top {
+  background-color: rgba(28, 130, 55, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  float: left;
+  padding: 0 10%;
+  position: relative;
+  width: 80%;
+  z-index: 9;
 }
 body header .header-top .logo {
-  background: transparent url('../images/ico/menu_separator.jpg') repeat-y right center;
-  width: calc(25%);
+  height: 100px;
+  float: left;
+  margin: 1%;
 }
 body header .header-top .logo img {
   display: block;
   margin: 0 auto;
 }
-body header .header-top .info {
-  background: transparent url('../images/ico/menu_separator.jpg') repeat-y right center;
-  width: calc(50%);
+body header .header-top nav {
+  float: right;
+  height: 40px;
+  line-height: 30px;
+  width: 420px;
 }
-body header .header-top .info .sub {
-  padding: 20px;
+body header .header-top nav ul.menu {
+  float: left;
+  width: 100%;
+}
+body header .header-top nav ul.menu li {
+  float: left;
+  margin: 0 2%;
   text-align: center;
 }
-body header .header-top .info .sub:first-child {
-  padding-bottom: 0;
+body header .header-top nav ul.menu li:hover a,
+body header .header-top nav ul.menu li.selected a {
+  text-shadow: 0px 0px 1px #1f5a2f;
 }
-body header .header-top .phone {
-  font-size: 20px;
+body header .header-top nav ul.menu li a {
+  color: #000000;
+  display: block;
+  font-size: 18px;
   font-weight: bold;
-  text-align: center;
-  line-height: 100px;
-  width: calc(25%);
+  padding: 5px 0;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #ffffff;
+  width: 100%;
 }
 body header .header-top > div {
   float: left;
 }
-body header nav {
-  border-bottom: 1px solid #000000;
-  border-top: 1px solid #000000;
-  float: left;
+body header .bg-header {
+  max-height: 280px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
   width: 100%;
+  z-index: 1;
 }
-body header nav ul.menu {
-  background: #6a88a7 url('../images/ico/menu_separator.jpg') repeat-y left center;
-  float: left;
-  width: 100%;
-}
-body header nav ul.menu li {
-  background: transparent url('../images/ico/menu_separator.jpg') repeat-y right center;
-  float: left;
-  text-align: center;
-  width: 25%;
-}
-body header nav ul.menu li:hover,
-body header nav ul.menu li.selected {
-  background-color: #07396d;
-}
-body header nav ul.menu li a {
-  color: #ffffff;
+body header .bg-header img {
   display: block;
-  font-size: 18px;
-  padding: 5px 0;
-  text-decoration: none;
+  float: left;
+  opacity: 0.8;
+  position: relative;
   width: 100%;
+}
+body header .bg-header h1 {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  z-index: 99;
+  text-shadow: 0px 0px 10px #000000;
+  font-size: 4em;
+  color: #ffffff;
 }
 body .content {
-  background-color: #ffffff;
-  border-left: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
-  -webkit-box-shadow: 0 0 50px -10px #000000;
-  -moz-box-shadow: 0 0 50px -10px #000000;
-  box-shadow: 0 0 50px -10px #000000;
   float: left;
   font-size: 14px;
-  width: calc(100% - 40px);
-  padding: 20px;
+  margin: 0 10% 50px;
+  position: relative;
+  width: 80%;
+  z-index: 9;
 }
 body .content h2 {
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: calc(20px);
 }
 body .content .img_list {
   display: block;
   float: left;
+  width: 100%;
 }
 body .content .box {
   color: black;
   float: left;
   margin: 10px 0;
+  padding: 10px;
   position: relative;
-  width: calc(33.33333333%);
 }
 body .content .box.full {
+  width: calc(100% - 20px);
+}
+body .content .box.half {
+  width: calc(50% - 20px);
+}
+body .content .box h2 {
+  margin: 0 0 10px 0;
+}
+body form {
+  float: left;
   width: 100%;
 }
-body .content .box.fancybox {
-  cursor: pointer;
-}
-body .content .box img {
-  -webkit-box-shadow: 0 0 20px 0px #000000;
-  -moz-box-shadow: 0 0 20px 0px #000000;
-  box-shadow: 0 0 20px 0px #000000;
-  display: block;
-  margin: 0 auto;
+body form label {
+  float: left;
+  margin: 0 0 calc(5px);
   width: 100%;
 }
-body .content .box .img_desc {
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  transition: opacity 1s;
-  background-color: rgba(255, 255, 255, 0.7);
-  height: calc(100% - 40px);
-  left: 0;
-  opacity: 0;
-  padding: 20px;
-  position: absolute;
-  top: 0px;
-  width: calc(100% - 40px);
+body form input,
+body form textarea {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 0 10px;
+  padding-left: 5px;
+  width: 100%;
 }
-body .content .box .img_desc:hover {
-  opacity: 1;
+body form textarea {
+  height: 100px;
+  line-height: 20px;
 }
-body .content .box .img_desc .title {
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 10px;
+body em {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+body em.normal {
+  font-style: normal;
 }
 body .fancybox-image {
   width: 100%;
 }
 body footer {
-  background-color: #ffffff;
-  border-left: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
+  background-color: #1c8237;
+  bottom: 0;
   -webkit-box-shadow: 0 0 50px -20px #000000;
   -moz-box-shadow: 0 0 50px -20px #000000;
   box-shadow: 0 0 50px -20px #000000;
-  background-color: white;
+  color: #ffffff;
   float: left;
   height: 20px;
   line-height: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  position: relative;
+  position: fixed;
   width: 100%;
+  z-index: 100;
 }
 body footer .footer {
   text-align: center;
