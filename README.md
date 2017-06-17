@@ -5,6 +5,7 @@
 <p>I am working on a redesign of the website so it will hopefully look better and easier to work with.</p>
 
 <ul>
-  <li>Master branch is the website that is live (www.lestondeurs.com)</li>
+  <li>live branch is the version of the website currently live (www.lestondeurs.com)</li>
   <li>dev branch is the version I am working on (lestondeurs.nicolasgillespie.com)</li>
+  <li>master branch is the version I am working on (lestondeurs.nicolasgillespie.com)</li>
 </ul>
