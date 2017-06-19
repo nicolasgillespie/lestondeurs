@@ -274,3 +274,8 @@ body footer .footer {
 .spacingLeft2x {
   margin-left: 20px;
 }
+.ng-filter-list {
+  float: right;
+  margin: 10px 0;
+  width: auto;
+}

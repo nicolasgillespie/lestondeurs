@@ -21,14 +21,22 @@
 		 ?>
 		<title>Les Tondeurs plus<?php echo $title; ?></title>
 
-		<link rel="stylesheet" media="all" href="/assets/css/ng_styles.css"></link>
 		<link rel="stylesheet" media="all" href="/assets/css/styles.css"></link>
+
+		<!-- Add fancybox plugin styles -->
 		<link rel="stylesheet" media="all" href="/vendor/fancy-box/jquery.fancybox.css"></link>
+		<!-- Add ng.filter plugin styles -->
+		<link rel="stylesheet" media="all" href="/vendor/ng-filter/ng.filter.min.css"></link>
+
+		<link rel="stylesheet" media="all" href="/assets/css/ng_styles.css"></link>
 
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript" src="/assets/lib/jquery/jquery-2.2.3.min.js"></script>
+		<!-- Add fancybox plugin script -->
 		<script type="text/javascript" src="/vendor/fancy-box/jquery.fancybox.pack.js"></script>
+		<!-- Add ng.filter plugin script -->
+		<script type="text/javascript" src="/vendor/ng-filter/ng.filter.min.js"></script>
 
 		<script type="text/javascript" src="/assets/js/script.js"></script>
 	</head>

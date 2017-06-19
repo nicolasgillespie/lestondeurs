@@ -11,28 +11,29 @@
 ?>
 		<!-- content -->
 		<div class="content <?php echo $page; ?>">
-			<?php
-				$projects = $realisations['prj'];
-				$link = $realisations['link'];
+			<div class="img_list">
 
-				foreach ($projects as $key => $value) {
-					$title = $value['title'];
-					$desc = $value['desc'];
-					$name = $value['name'];
-					$rel = $value['rel'];
-			?>
+				<?php
+					$projects = $realisations['prj'];
+					$link = $realisations['link'];
 
-			<a href="<?php echo $_ng_param['medias']['paths']['images'] . $link . $name; ?>" class="fancybox box" rel="Project 2">
-				<img src="<?php echo $_ng_param['medias']['paths']['images'] . $link . 'thumbs/' . $name; ?>" alt="" />
-				<div class="img_desc">
-					<div class="title"><?php echo $title; ?></div>
-					<div class="desc"><?php echo $desc; ?></div>
-				</div>
-			</a>
-
-			<?php
-				}
-			?>
+					foreach ($projects as $key => $value) {
+						$title = $value['title'];
+						$desc = $value['desc'];
+						$name = $value['name'];
+						$rel = $value['rel'];
+				?>
+				<a href="<?php echo $_ng_conf['medias']['paths']['images'] . $link . $name; ?>" class="fancybox box" rel="<?php echo $rel; ?>">
+					<img src="<?php echo $_ng_conf['medias']['paths']['images'] . $link . 'thumbs/' . $name; ?>" alt="" />
+					<div class="img_desc">
+						<div class="title"><?php echo $title; ?></div>
+						<div class="desc"><?php echo $desc; ?></div>
+					</div>
+				</a>
+				<?php
+					}
+				?>
+			</div>
 		</div>
 		<footer>
 			<div class="footer">
