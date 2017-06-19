@@ -75,16 +75,15 @@ body header .header-top nav ul.menu li {
 }
 body header .header-top nav ul.menu li:hover a,
 body header .header-top nav ul.menu li.selected a {
-  text-shadow: 0px 0px 1px #1f5a2f;
+  text-shadow: 0px 0px 2px #1f5a2f;
 }
 body header .header-top nav ul.menu li a {
-  color: #000000;
+  color: #ffffff;
   display: block;
   font-size: 18px;
-  font-weight: bold;
   padding: 5px 0;
   text-decoration: none;
-  text-shadow: 0px 0px 1px #ffffff;
+  text-shadow: 0px 0px 2px #000000;
   width: 100%;
 }
 body header .header-top > div {
