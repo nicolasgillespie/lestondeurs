@@ -8,14 +8,6 @@
 ?>
 		<!-- content -->
 		<div class="content">
-			<!-- <div class="box full">
-				<h1>Les Tondeurs</h1>
-				<h2>Qui sommes-nous?</h2>
-				<img src="assets/images/team.jpg" width="100%" alt="Équipe Les Tondeurs" />
-			</div> -->
-			<!-- <div class="box full">
-				<img src="/assets/images/img_rotator/amenagement-1.jpg" alt="" />
-			</div> -->
 			<div class="box full">
 				<h3>Notre mission</h3>
 				<div class="text">
@@ -28,11 +20,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- footer -->
-		<footer>
-			<div class="footer">
-				Copyright &#169; 2017 Les Tondeurs Enr. Tous droits réservés
-			</div>
-		</footer>
-	</body>
-</html>
+<?php
+	include 'assets/pages/footer.php';
+?>

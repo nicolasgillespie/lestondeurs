@@ -1,7 +1,7 @@
 <?php
 	$url_home = '/index';
 	// $url_home = '#';
-	$url_realisations = '#';
+	$url_realisations = '/fr/realisations';
 	// $url_realisations = '/fr/realisations.html';
 	$url_services = '#';
 	// $url_services = '/fr/services.html';
@@ -44,6 +44,7 @@
 				if($page == 'home') {
 					echo 'Les Tondeurs plus';
 				} else if($page == 'realisations') {
+					echo 'Nos réalisations';
 				} else if($page == 'services') {
 				} else if($page == 'contact') {
 					echo 'Pour nous contacter';

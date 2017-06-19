@@ -118,11 +118,10 @@ body {
     .content {
       float: left;
       font-size: 14px;
-      margin:0 10% 50px;;
+      margin:0 10% 20px;;
       position:relative;
       width:80%;
       z-index:9;
-
 
       & h2 {
           margin-bottom:@normalSpacing;
@@ -136,7 +135,7 @@ body {
       & .box {
         color:black;
         float:left;
-        margin: @normalSpacing 0;
+        margin: calc(2 * @normalSpacing) 0;
         padding:@normalSpacing;
         position:relative;
 
@@ -147,37 +146,43 @@ body {
           margin:0 0 @normalSpacing 0;
         }
 
-          // &.fancybox { cursor:pointer; }
-          // & img {
-          //     .box-shadow(0 0 20px 0px #000);
-          //     display: block;
-          //     margin:0 auto;
-          //     width:@full;
-          // }
-          // & .img_desc {
-          //     -webkit-transition: opacity 1s;
-          //        -moz-transition: opacity 1s;
-          //             transition: opacity 1s;
-          //     background-color:rgba(255, 255, 255, 0.7);
-          //     height:calc(~'100% - 40px');
-          //     left:0;
-          //     opacity: 0;
-          //     padding: 20px;
-          //     position:absolute;
-          //     top:0px;
-          //     // width:270px;
-          //     width:calc(~'100% - 40px');
-          //
-          //     &:hover {
-          //         opacity:1;
-          //     }
-          //
-          //     & .title {
-          //         font-weight:bold;
-          //         font-size:16px;
-          //         margin-bottom:10px;
-          //     }
-          // }
+        &.fancybox { cursor:pointer; }
+        & img {
+            .box-shadow(0 0 20px 0px #000);
+            display: block;
+            margin:0 auto;
+            width:@full;
+        }
+        & .img_desc {
+            -webkit-transition: opacity 1s;
+               -moz-transition: opacity 1s;
+                    transition: opacity 1s;
+            background-color:rgba(255, 255, 255, 0.7);
+            height:calc(~'100% - 40px');
+            left:0;
+            opacity: 0;
+            padding: 20px;
+            position:absolute;
+            top:0px;
+            // width:270px;
+            width:calc(~'100% - 40px');
+
+            &:hover {
+                opacity:1;
+            }
+
+            & .title {
+                font-weight:bold;
+                font-size:16px;
+                margin-bottom:10px;
+            }
+        }
+      }
+
+      &.realisations {
+        & .box {
+          margin: calc(2 * @normalSpacing) 2.5%;
+        }
       }
     }
 
