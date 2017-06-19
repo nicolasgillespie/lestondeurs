@@ -9,11 +9,8 @@ body {
 }
 body header {
   float: left;
-<<<<<<< HEAD
-=======
   height: 290px;
   margin: 0;
->>>>>>> fbac89b5f8daa7e091fba34a086c453b9b114b93
   padding: 0;
   width: 100%;
 }
