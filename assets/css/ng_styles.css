@@ -13,7 +13,7 @@ body header {
   -moz-box-shadow: 0 0 50px -10px #000000;
   box-shadow: 0 0 50px -10px #000000;
   float: left;
-  padding: 10px 0 0 0;
+  padding: 0;
   width: 100%;
 }
 body header .header-top h1 {
@@ -112,6 +112,7 @@ body .content h2 {
 body .content .img_list {
   display: block;
   float: left;
+  width: 100%;
 }
 body .content .box {
   color: black;
