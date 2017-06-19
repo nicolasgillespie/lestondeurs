@@ -7,8 +7,8 @@
 # ToDo
 <ul> 
   <li>Create every page with the new design</li>
-  <li>Responsive for the website</li>
   <li>add filter to réalisations</li>
+  <li>Responsive for the website</li>
 </ul>
 
 # Branches
