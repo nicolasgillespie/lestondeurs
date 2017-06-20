@@ -40,7 +40,7 @@ body header .phone {
   user-select: text;
 }
 body header .header-top {
-  background-color: rgba(28, 130, 55, 0.3);
+  background-color: rgba(28, 130, 55, 0.4);
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   float: left;
@@ -62,7 +62,12 @@ body header .header-top nav {
   float: right;
   height: 40px;
   line-height: 30px;
+  margin-top: 80px;
   width: 420px;
+}
+body header .header-top nav#mobile-nav {
+  background: transparent url('/assets/images/ico/mobile-menu.gif') no-repeat 0 0;
+  display: none;
 }
 body header .header-top nav ul.menu {
   float: left;
@@ -180,7 +185,7 @@ body .content .box .img_desc .title {
   margin-bottom: 10px;
 }
 body .content.realisations .box {
-  margin: calc(20px) 2.5%;
+  margin: calc(20px) 3.5%;
 }
 body form {
   float: left;
@@ -277,4 +282,39 @@ body footer .footer {
   float: right;
   margin: 10px 0;
   width: auto;
+}
+@media screen and (max-width: 768px) {
+  body header .phone,
+  body header .info {
+    height: 28px;
+    line-height: 14px;
+    padding: 2px 3%;
+    width: calc(44%);
+  }
+  body header .phone {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  body header .header-top nav {
+    display: none;
+  }
+  body header .header-top nav#mobile-nav {
+    display: block;
+    height: 80px;
+    width: 80px;
+  }
+  body header .header-top nav#mobile-nav .menu {
+    display: none;
+  }
+  body header .bg-header {
+    top: 32px;
+  }
+  body header .bg-header h1 {
+    bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .content.realisations .img_list {
+    max-width: 1300px;
+  }
 }

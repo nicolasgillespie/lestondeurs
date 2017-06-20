@@ -3,10 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<meta name="description" content="LES TONDEURS PLUS est une entreprise spécialisée dans les services paysagers" />
-		<meta name="keywords" content="Les tondeurs, tonte de pelouse, Tondeurs, aménagement paysagé, PAVÉ-UNI *produits Permacon, Pose de tourbe, plates-bandes, terrautage, fertilisation, taille de haies, irrigation, plantation de cèdres, déchaumage mécanique, aération mécanique, livraison de terre" />
+		<meta name="robots" content="noindex, nofollow">
 
-		<meta name="author" content="Nicolas Gillespie" />
 		<?php
 			require_once(dirname(dirname(dirname(__FILE__))) .'/require_config.php');
 
@@ -21,6 +19,12 @@
 				$title = ' | Contactez-nous';
 			}
 		 ?>
+
+		<meta name="description" content="" />
+ 		<meta name="keywords" content="" />
+
+		<link rel="icon" href="<?php echo $_ng_conf['medias']['paths']['images']; ?>favicon.png" sizes="112x112" type="image/png"></link>
+
 		<title>Les Tondeurs plus<?php echo $title; ?></title>
 
 		<link rel="stylesheet" media="all" href="/assets/css/styles.css"></link>

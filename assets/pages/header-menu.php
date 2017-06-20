@@ -18,9 +18,25 @@
 	<div class="phone">450-262-1000</div>
 	<div class="header-top">
 		<div class="logo">
-			<img src="/assets/images/logo.png" alt="Logo Les Tondeurs" />
+			<img src="/assets/images/logo-outline.png" alt="Logo Les Tondeurs" />
 		</div>
 		<nav>
+			<ul class="menu">
+				<li class="entreprise <?php if($page == 'home') { echo 'selected'; } ?>">
+					<a href="<?php echo $url_home; ?>">Entreprise</a>
+				</li>
+				<li class="realisations <?php if($page == 'realisations') { echo 'selected'; } ?>">
+					<a href="<?php echo $url_realisations; ?>">Réalisations</a>
+				</li>
+				<li class="services <?php if($page == 'services') { echo 'selected'; } ?>">
+					<a href="<?php echo $url_services; ?>">Services</a>
+				</li>
+				<li class="contact <?php if($page == 'contact') { echo 'selected'; } ?>">
+					<a href="<?php echo $url_contact; ?>">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<nav id="mobile-nav">
 			<ul class="menu">
 				<li class="entreprise <?php if($page == 'home') { echo 'selected'; } ?>">
 					<a href="<?php echo $url_home; ?>">Entreprise</a>

@@ -28,7 +28,7 @@ body {
       & .phone { .user-select(text); }
 
       & .header-top {
-        background-color:rgba(28, 130, 55, 0.3);
+        background-color:rgba(28, 130, 55, 0.4);
         border-bottom:1px solid rgba(255,255,255,0.4);
         border-top:1px solid rgba(255,255,255,0.4);
         float:left;
@@ -52,7 +52,14 @@ body {
               float:right;
               height:40px;
               line-height:30px;
+              margin-top:80px;
               width:420px;
+
+              &#mobile-nav {
+                background:transparent url('/assets/images/ico/mobile-menu.gif') no-repeat 0 0;
+                display:none;
+
+              }
 
               & ul.menu {
                   float:left;
@@ -182,7 +189,7 @@ body {
 
       &.realisations {
         & .box {
-          margin: calc(2 * @normalSpacing) 2.5%;
+          margin: calc(2 * @normalSpacing) 3.5%;
         }
       }
     }
